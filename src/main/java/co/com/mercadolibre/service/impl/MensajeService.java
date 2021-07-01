@@ -27,17 +27,17 @@ public class MensajeService implements IMensajeService {
 	}
 
 	@Override
-	public String getMessage(List<Satelite> in) {
+	public String getMessage(List<Satelite> satelites) {
 
 		List<String> baseList = new ArrayList<String>();
-		for (Satelite obj : in) {
+		for (Satelite obj : satelites) {
 			if (null == obj.getMessage())
 				throw new ModeloNotFoundException(Constantes.ERROR_INSUFFICIENT_MESSAGES_DETERMINED);
 			baseList = Stream.concat(baseList.stream(), Arrays.stream(obj.getMessage().split("\\,", -1)))
 					.filter(x -> !x.equals("")).distinct().collect(Collectors.toList());
 
 		}
-		for (Satelite obj : in) {
+		for (Satelite obj : satelites) {
 			String message[] = obj.getMessage().split("\\,", -1);
 			if (message.length != baseList.size())
 				throw new ModeloNotFoundException(Constantes.ERROR_INSUFFICIENT_MESSAGES_DETERMINED);

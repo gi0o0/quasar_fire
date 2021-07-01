@@ -51,5 +51,16 @@ public class ComunicacionServiceTest {
 		assertNotEquals("mama donde esta la comida", mensajeService.getMessage(satellites));
 
 	}
+	
+
+	@Test(expected = ModeloNotFoundException.class)
+	public void wheLenghtIsNoValid() {
+		List<Satelite> satellites = new ArrayList<>();
+		satellites.add(new Satelite("Gio", "mama,"));
+		satellites.add(new Satelite("skywalker", ",donde,,,"));
+		satellites.add(new Satelite("sato", ",,esta,la,"));
+		assertNotEquals("mama donde esta la comida", mensajeService.getMessage(satellites));
+
+	}
 
 }

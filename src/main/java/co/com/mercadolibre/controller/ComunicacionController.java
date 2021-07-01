@@ -9,9 +9,10 @@ import org.springframework.web.bind.annotation.RestController;
 import co.com.mercadolibre.dto.DTOSatelitesIn;
 import co.com.mercadolibre.dto.DTOSatelitesOut;
 import co.com.mercadolibre.service.IComunicacionService;
+import co.com.mercadolibre.util.Constantes;
 
 @RestController
-@RequestMapping("${communication.context.path}")
+@RequestMapping(Constantes.PATH_COMUNICATION_CONTEXT)
 public class ComunicacionController {
 
 	private final IComunicacionService comunicacionesService;
@@ -23,8 +24,8 @@ public class ComunicacionController {
 	}
 
 	@PostMapping(produces = "application/json", consumes = "application/json")
-	public DTOSatelitesOut sourceContent(@RequestBody DTOSatelitesIn in) {				
-		return comunicacionesService.retrySourceContentMessage(in);
+	public DTOSatelitesOut sourceContent(@RequestBody DTOSatelitesIn satelite) {				
+		return comunicacionesService.retrySourceContentMessage(satelite);
 	}
 
 }

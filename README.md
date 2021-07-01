@@ -23,5 +23,6 @@ En la vista de paquetes se definen los paquetes que tendrá el componente softwa
 
 La comunicación entre paquetes es unidireccional y solo con la capa siguiente inferior.
 
-
+http://localhost:8080/v01/quasar/swagger-ui.html
+http://localhost:8080/v01/quasar/health
  

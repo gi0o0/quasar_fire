@@ -37,11 +37,11 @@ public class PosicionService implements IPosicionService {
 	}
 
 	@Override
-	public double[][] getCoordinatesSatelites(List<Satelite> in) {
+	public double[][] getCoordinatesSatelites(List<Satelite> satelites) {
 
-		double[][] coordinatesSatellites = new double[in.size()][];
-		for (int i = 0; i < in.size(); i++) {
-			String[] coordinatesSatellite = getCoordinateSatellite(in.get(i).getName().toLowerCase());
+		double[][] coordinatesSatellites = new double[satelites.size()][];
+		for (int i = 0; i < satelites.size(); i++) {
+			String[] coordinatesSatellite = getCoordinateSatellite(satelites.get(i).getName().toLowerCase());
 			if (null == coordinatesSatellite)
 				throw new ModeloNotFoundException(Constantes.ERROR_INSUFFICIENT_COORDINATES);
 			coordinatesSatellites[i] = Arrays.stream(coordinatesSatellite).map(Double::valueOf)
@@ -51,17 +51,18 @@ public class PosicionService implements IPosicionService {
 	}
 
 	@Override
-	public double[] getDistanceSatelites(List<Satelite> in) {
-		int size = in.size();
+	public double[] getDistanceSatelites(List<Satelite> satelites) {
+		int size = satelites.size();
 		double[] distances = new double[size];
 		for (int i = 0; i < size; i++)
-			distances[i] = in.get(i).getDistance();
+			distances[i] = satelites.get(i).getDistance();
 		return distances;
 	}
 
+	@Override
 	public String[] getCoordinateSatellite(String name) {
 		String out[] = new String[2];
-		Satelite satelite = dao.findOneByName(name).get(0);
+		final Satelite satelite = dao.findOneByName(name).get(0);
 		out[0] = String.valueOf(satelite.getCoordinatex());
 		out[1] = String.valueOf(satelite.getCoordinatey());
 		return out;

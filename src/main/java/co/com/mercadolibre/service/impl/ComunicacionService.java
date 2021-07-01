@@ -39,8 +39,8 @@ public class ComunicacionService implements IComunicacionService {
 	}
 
 	@Override
-	public DTOSatelitesOut retrySourceContentMessage(DTOSatelitesIn in) {
-		in.getsatellites().stream().forEach(item -> registrar(comunicacionMapper.getSatelitesIn(item)));
+	public DTOSatelitesOut retrySourceContentMessage(DTOSatelitesIn satelite) {
+		satelite.getsatellites().stream().forEach(item -> registrar(comunicacionMapper.getSatelitesIn(item)));
 		return retrySourceContent();
 	}
 

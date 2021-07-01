@@ -14,9 +14,10 @@ import co.com.mercadolibre.dto.DTOSatelite;
 import co.com.mercadolibre.dto.DTOSatelitesOut;
 import co.com.mercadolibre.mapper.IComunicacionMapper;
 import co.com.mercadolibre.service.IComunicacionService;
+import co.com.mercadolibre.util.Constantes;
 
 @RestController
-@RequestMapping("${communication_split.context.path}")
+@RequestMapping(Constantes.PATH_COMUNICATION_SPLIT_CONTEXT)
 public class ComunicacionSplitController {
 
 	private final IComunicacionService comunicacionesService;
@@ -33,8 +34,8 @@ public class ComunicacionSplitController {
 
 	@PostMapping(value = "/{satellite_name}", produces = "application/json", consumes = "application/json")
 	public ResponseEntity<Object> registrar(@PathVariable("satellite_name") String satelliteName,
-			@RequestBody DTOSatelite in) {
-		comunicacionesService.registrar(comunicacionesMapper.getSatelitesIn(in, satelliteName));
+			@RequestBody DTOSatelite satelite) {
+		comunicacionesService.registrar(comunicacionesMapper.getSatelitesIn(satelite, satelliteName));
 		return new ResponseEntity<>(HttpStatus.CREATED);
 
 	}

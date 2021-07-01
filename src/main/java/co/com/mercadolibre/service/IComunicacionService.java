@@ -6,10 +6,10 @@ import co.com.mercadolibre.entities.Satelite;
 
 public interface IComunicacionService {
 
-	DTOSatelitesOut retrySourceContentMessage(DTOSatelitesIn in);
+	DTOSatelitesOut retrySourceContentMessage(DTOSatelitesIn satelite);
 
 	DTOSatelitesOut retrySourceContent();
 
-	Satelite registrar(Satelite in);
+	Satelite registrar(Satelite satelite);
 
 }

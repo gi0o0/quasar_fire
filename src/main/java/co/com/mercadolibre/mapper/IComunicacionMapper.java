@@ -6,8 +6,8 @@ import co.com.mercadolibre.entities.Satelite;
 
 public interface IComunicacionMapper {
 	
-	Satelite getSatelitesIn(DTOSatelite in,String satelliteName) ;
+	Satelite getSatelitesIn(DTOSatelite satelite,String satelliteName) ;
 	
-	Satelite getSatelitesIn(DTOSateliteGlobal in) ;
+	Satelite getSatelitesIn(DTOSateliteGlobal satelite) ;
 			
 }
