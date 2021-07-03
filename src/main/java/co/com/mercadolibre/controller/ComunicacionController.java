@@ -1,6 +1,8 @@
 package co.com.mercadolibre.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -24,8 +26,8 @@ public class ComunicacionController {
 	}
 
 	@PostMapping(produces = "application/json", consumes = "application/json")
-	public DTOSatelitesOut sourceContent(@RequestBody DTOSatelitesIn satelite) {				
-		return comunicacionesService.retrySourceContentMessage(satelite);
+	public ResponseEntity<DTOSatelitesOut> sourceContent(@RequestBody DTOSatelitesIn satelite) {	
+		return new ResponseEntity<DTOSatelitesOut>(comunicacionesService.retrySourceContentMessage(satelite),HttpStatus.CREATED);
 	}
 
 }
