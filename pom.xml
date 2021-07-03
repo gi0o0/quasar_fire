@@ -112,10 +112,10 @@
 		</dependency>
 
 		<dependency>
-			<groupId>com.h2database</groupId>
-			<artifactId>h2</artifactId>
-			<scope>runtime</scope>
+			<groupId>mysql</groupId>
+			<artifactId>mysql-connector-java</artifactId>
 		</dependency>
+
 
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
@@ -123,6 +123,37 @@
 		</dependency>
 
 	</dependencies>
+	
+	 <profiles>
+        <profile>
+            <id>dev</id>
+            <properties>
+                <env>dev</env>
+            </properties>         
+        </profile>
+           <profile>
+            <id>qas</id>
+            <properties>
+                <env>qas</env>
+            </properties>         
+        </profile>
+           <profile>
+            <id>stg</id>
+            <properties>
+                <env>stg</env>
+            </properties>         
+        </profile>
+        <profile>
+            <id>prd</id>
+            <properties>
+                <env>prd</env>
+            </properties>
+               <activation>
+                <activeByDefault>true</activeByDefault>
+            </activation>
+        </profile>
+    </profiles>
+	
 
 	<build>
 		<plugins>
@@ -151,6 +182,10 @@
 				<configuration>
 					<excludes>
 						<exclude>**/*co/com/mercadolibre/QuasarFireApplication.class</exclude>
+						<exclude>**/*co/com/mercadolibre/util/Constantes.class</exclude>
+						<exclude>**/*co/com/mercadolibre/util/CORS.class</exclude>
+						<exclude>**/*co/com/mercadolibre/util/UtilidadesService.class</exclude>
+						<exclude>**/*co/com/mercadolibre/exception/ResponseExceptionHandler.class</exclude>
 					</excludes>
 				</configuration>
 				<executions>

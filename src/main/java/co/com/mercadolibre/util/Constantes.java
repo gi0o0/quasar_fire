@@ -1,5 +1,8 @@
 package co.com.mercadolibre.util;
 
+import org.springframework.cache.annotation.EnableCaching;
+
+@EnableCaching
 public class Constantes {
 
 	public static final String ERROR_INSUFFICIENT_MESSAGES = "Insufficient Messages";

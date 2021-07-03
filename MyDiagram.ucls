@@ -1,0 +1,378 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class-diagram version="1.2.4" icons="true" always-add-relationships="false" generalizations="true" realizations="true" 
+  associations="true" dependencies="false" nesting-relationships="true" router="FAN">  
+  <class id="1" language="java" name="co.com.mercadolibre.QuasarFireApplication" project="QUASAR_FIRE" 
+    file="/QUASAR_FIRE/src/main/java/co/com/mercadolibre/QuasarFireApplication.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="99" width="150" x="1515" y="37"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="2" language="java" name="co.com.mercadolibre.config.SwaggerConfiguracion" project="QUASAR_FIRE" 
+    file="/QUASAR_FIRE/src/main/java/co/com/mercadolibre/config/SwaggerConfiguracion.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="135" width="166" x="1915" y="37"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="3" language="java" name="co.com.mercadolibre.config.DatasourceConfig" project="QUASAR_FIRE" 
+    file="/QUASAR_FIRE/src/main/java/co/com/mercadolibre/config/DatasourceConfig.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="117" width="262" x="2121" y="37"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="4" language="java" name="co.com.mercadolibre.controller.ComunicacionSplitController" project="QUASAR_FIRE" 
+    file="/QUASAR_FIRE/src/main/java/co/com/mercadolibre/controller/ComunicacionSplitController.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="117" width="381" x="3311" y="37"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="5" language="java" name="co.com.mercadolibre.controller.ComunicacionController" project="QUASAR_FIRE" 
+    file="/QUASAR_FIRE/src/main/java/co/com/mercadolibre/controller/ComunicacionController.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="99" width="257" x="3014" y="37"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <interface id="6" language="java" name="co.com.mercadolibre.dao.ISateliteDAO" project="QUASAR_FIRE" 
+    file="/QUASAR_FIRE/src/main/java/co/com/mercadolibre/dao/ISateliteDAO.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="81" width="207" x="4739" y="518"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <class id="7" language="java" name="co.com.mercadolibre.dto.DTOSatelitesIn" project="QUASAR_FIRE" 
+    file="/QUASAR_FIRE/src/main/java/co/com/mercadolibre/dto/DTOSatelitesIn.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="153" width="229" x="5038" y="37"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="8" language="java" name="co.com.mercadolibre.dto.DTOSatelitesOut" project="QUASAR_FIRE" 
+    file="/QUASAR_FIRE/src/main/java/co/com/mercadolibre/dto/DTOSatelitesOut.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="189" width="170" x="1705" y="37"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="9" language="java" name="co.com.mercadolibre.dto.DTOSatelite" project="QUASAR_FIRE" 
+    file="/QUASAR_FIRE/src/main/java/co/com/mercadolibre/dto/DTOSatelite.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="225" width="173" x="5307" y="37"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="10" language="java" name="co.com.mercadolibre.dto.DTOPosicion" project="QUASAR_FIRE" 
+    file="/QUASAR_FIRE/src/main/java/co/com/mercadolibre/dto/DTOPosicion.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="225" width="133" x="1705" y="518"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="11" language="java" name="co.com.mercadolibre.dto.DTOSateliteGlobal" project="QUASAR_FIRE" 
+    file="/QUASAR_FIRE/src/main/java/co/com/mercadolibre/dto/DTOSateliteGlobal.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="189" width="243" x="5173" y="518"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="12" language="java" name="co.com.mercadolibre.entities.Satelite" project="QUASAR_FIRE" 
+    file="/QUASAR_FIRE/src/main/java/co/com/mercadolibre/entities/Satelite.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="441" width="163" x="41" y="37"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="13" language="java" name="co.com.mercadolibre.exception.ResponseExceptionHandler" project="QUASAR_FIRE" 
+    file="/QUASAR_FIRE/src/main/java/co/com/mercadolibre/exception/ResponseExceptionHandler.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="153" width="657" x="244" y="37"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="14" language="java" name="co.com.mercadolibre.exception.ModeloNotFoundException" project="QUASAR_FIRE" 
+    file="/QUASAR_FIRE/src/main/java/co/com/mercadolibre/exception/ModeloNotFoundException.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="99" width="189" x="1286" y="37"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="15" language="java" name="co.com.mercadolibre.exception.ExceptionResponse" project="QUASAR_FIRE" 
+    file="/QUASAR_FIRE/src/main/java/co/com/mercadolibre/exception/ExceptionResponse.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="243" width="214" x="2760" y="37"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <interface id="16" language="java" name="co.com.mercadolibre.mapper.IComunicacionMapper" project="QUASAR_FIRE" 
+    file="/QUASAR_FIRE/src/main/java/co/com/mercadolibre/mapper/IComunicacionMapper.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="99" width="223" x="3680" y="518"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <class id="17" language="java" name="co.com.mercadolibre.mapper.impl.ComunicacionMapper" project="QUASAR_FIRE" 
+    file="/QUASAR_FIRE/src/main/java/co/com/mercadolibre/mapper/impl/ComunicacionMapper.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="117" width="223" x="3732" y="37"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <interface id="18" language="java" name="co.com.mercadolibre.service.IPosicionService" project="QUASAR_FIRE" 
+    file="/QUASAR_FIRE/src/main/java/co/com/mercadolibre/service/IPosicionService.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="135" width="259" x="4440" y="518"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <interface id="19" language="java" name="co.com.mercadolibre.service.IMensajeService" project="QUASAR_FIRE" 
+    file="/QUASAR_FIRE/src/main/java/co/com/mercadolibre/service/IMensajeService.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="81" width="188" x="4212" y="518"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <interface id="20" language="java" name="co.com.mercadolibre.service.IComunicacionService" project="QUASAR_FIRE" 
+    file="/QUASAR_FIRE/src/main/java/co/com/mercadolibre/service/IComunicacionService.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="117" width="325" x="3311" y="518"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <class id="21" language="java" name="co.com.mercadolibre.service.impl.ComunicacionService" project="QUASAR_FIRE" 
+    file="/QUASAR_FIRE/src/main/java/co/com/mercadolibre/service/impl/ComunicacionService.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="135" width="470" x="4229" y="37"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="22" language="java" name="co.com.mercadolibre.service.impl.MensajeService" project="QUASAR_FIRE" 
+    file="/QUASAR_FIRE/src/main/java/co/com/mercadolibre/service/impl/MensajeService.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="99" width="194" x="3995" y="37"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="23" language="java" name="co.com.mercadolibre.service.impl.PosicionService" project="QUASAR_FIRE" 
+    file="/QUASAR_FIRE/src/main/java/co/com/mercadolibre/service/impl/PosicionService.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="153" width="259" x="4739" y="37"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="24" language="java" name="co.com.mercadolibre.util.Constantes" project="QUASAR_FIRE" 
+    file="/QUASAR_FIRE/src/main/java/co/com/mercadolibre/util/Constantes.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="189" width="297" x="2423" y="37"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="25" language="java" name="co.com.mercadolibre.util.CORS" project="QUASAR_FIRE" 
+    file="/QUASAR_FIRE/src/main/java/co/com/mercadolibre/util/CORS.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="135" width="305" x="941" y="37"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="26" language="java" name="co.com.mercadolibre.util.UtilidadesService" project="QUASAR_FIRE" 
+    file="/QUASAR_FIRE/src/main/java/co/com/mercadolibre/util/UtilidadesService.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="99" width="229" x="3943" y="518"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <association id="27">    
+    <end type="SOURCE" refId="21" navigable="false">      
+      <attribute id="28" name="comunicacionMapper"/>      
+      <multiplicity id="29" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="16" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="30">    
+    <end type="SOURCE" refId="17" navigable="false">      
+      <attribute id="31" name="utilidadesService"/>      
+      <multiplicity id="32" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="26" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="33">    
+    <end type="SOURCE" refId="4" navigable="false">      
+      <attribute id="34" name="comunicacionesService"/>      
+      <multiplicity id="35" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="20" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <realization id="36">    
+    <end type="SOURCE" refId="22"/>    
+    <end type="TARGET" refId="19"/>  
+  </realization>  
+  <association id="37">    
+    <end type="SOURCE" refId="21" navigable="false">      
+      <attribute id="38" name="dao"/>      
+      <multiplicity id="39" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="6" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <generalization id="40">    
+    <end type="SOURCE" refId="11"/>    
+    <end type="TARGET" refId="9"/>  
+  </generalization>  
+  <association id="41">    
+    <end type="SOURCE" refId="4" navigable="false">      
+      <attribute id="42" name="comunicacionesMapper"/>      
+      <multiplicity id="43" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="16" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="44">    
+    <end type="SOURCE" refId="5" navigable="false">      
+      <attribute id="45" name="comunicacionesService"/>      
+      <multiplicity id="46" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="20" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="47">    
+    <end type="SOURCE" refId="22" navigable="false">      
+      <attribute id="48" name="utilidadesService"/>      
+      <multiplicity id="49" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="26" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="50">    
+    <end type="SOURCE" refId="8" navigable="false">      
+      <attribute id="51" name="position"/>      
+      <multiplicity id="52" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="10" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <realization id="53">    
+    <end type="SOURCE" refId="21"/>    
+    <end type="TARGET" refId="20"/>  
+  </realization>  
+  <association id="54">    
+    <end type="SOURCE" refId="23" navigable="false">      
+      <attribute id="55" name="dao"/>      
+      <multiplicity id="56" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="6" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="57">    
+    <end type="SOURCE" refId="21" navigable="false">      
+      <attribute id="58" name="mensajeService"/>      
+      <multiplicity id="59" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="19" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="60">    
+    <end type="SOURCE" refId="7" navigable="false">      
+      <attribute id="61" name="satellites"/>      
+      <multiplicity id="62" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="11" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="63">    
+    <end type="SOURCE" refId="21" navigable="false">      
+      <attribute id="64" name="posicionService"/>      
+      <multiplicity id="65" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="18" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <realization id="66">    
+    <end type="SOURCE" refId="17"/>    
+    <end type="TARGET" refId="16"/>  
+  </realization>  
+  <realization id="67">    
+    <end type="SOURCE" refId="23"/>    
+    <end type="TARGET" refId="18"/>  
+  </realization>  
+  <classifier-display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+    sort-features="false" accessors="true" visibility="true">    
+    <attributes public="true" package="true" protected="true" private="true" static="true"/>    
+    <operations public="true" package="true" protected="true" private="true" static="true"/>  
+  </classifier-display>  
+  <association-display labels="true" multiplicity="true"/>
+</class-diagram>
