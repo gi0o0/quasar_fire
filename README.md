@@ -55,7 +55,7 @@ Posibilidad de uso con otros servicios de AWS: Amazon ECS se integra con los dif
 
 ### Vista de Despliegue
 
-![Screenshot](https://github.com/gi0o0/quasar_fire/blob/master/doc/img/architecture-DeployView.png?raw=true)
+![Screenshot](https://github.com/gi0o0/quasar_fire/blob/master/doc/architecture-DeployView.png?raw=true)
 
 
 ## REQUERIMIENTOS
@@ -75,7 +75,7 @@ git clone https://github.com/gi0o0/quasar_fire.git
 Puede instalar una Base de datos Local MySql utilizando las siquientes instrucciones. https://dev.mysql.com/doc/refman/8.0/en/linux-installation-yum-repo.html o puede crearla en AWS con el servicio RDS
 siguiendo el siguiente manual. 
 
-![Screenshot](https://github.com/gi0o0/quasar_fire/blob/master/doc/img/AWS_RDS.docx?raw=true)
+![Screenshot](https://github.com/gi0o0/quasar_fire/blob/master/doc/AWS_RDS.docx?raw=true)
 
 Una vez instalada o creada en el servicio de AWS conectarse por medio de un cliente de su preferencia y ejecutar los script.
 
