@@ -2,6 +2,8 @@ package co.com.mercadolibre.service.impl;
 
 import java.util.List;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -27,6 +29,8 @@ public class ComunicacionService implements IComunicacionService {
 	private final ISateliteDAO dao;
 
 	private final IComunicacionMapper comunicacionMapper;
+	
+	private static final Logger LOGGER = LoggerFactory.getLogger(ComunicacionService.class);
 
 	@Autowired
 	public ComunicacionService(IPosicionService posicionService, IMensajeService mensajeService, ISateliteDAO dao,
@@ -40,6 +44,7 @@ public class ComunicacionService implements IComunicacionService {
 
 	@Override
 	public DTOSatelitesOut retrySourceContentMessage(DTOSatelitesIn satelite) {
+		LOGGER.info("Inicio retrySourceContentMessage en controller Request:"+satelite);
 		satelite.getsatellites().stream().forEach(item -> registrar(comunicacionMapper.getSatelitesIn(item)));
 		return retrySourceContent();
 	}
@@ -47,6 +52,9 @@ public class ComunicacionService implements IComunicacionService {
 	@Override
 	public DTOSatelitesOut retrySourceContent() {
 		List<Satelite> satelitesPositions = (List<Satelite>) dao.findAll();
+		
+		LOGGER.info("Inicio retrySourceContent en service Request:"+satelitesPositions);
+		
 		DTOSatelitesOut out = new DTOSatelitesOut();
 		out.setMessage(mensajeService.getMessage(satelitesPositions));
 		out.setPosition(
@@ -58,6 +66,9 @@ public class ComunicacionService implements IComunicacionService {
 	@Override
 	public Satelite registrar(Satelite t) {
 		List<Satelite> satelite = dao.findOneByName(t.getName().toLowerCase());
+		
+		LOGGER.info("Inicio registrar en service Request:"+satelite);
+		
 		if (satelite.size() == 0)
 			throw new ModeloNotFoundException(Constantes.ERROR_UNKNOWN_SATELLITE);
 		t.setCoordinatex(satelite.get(0).getCoordinatex());

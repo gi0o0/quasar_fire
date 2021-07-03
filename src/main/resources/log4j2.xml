@@ -1,0 +1,40 @@
+<Configuration status="TRACE">
+	<properties>
+	 	<Property name="logPath">${ENV:RUTALOGS}</Property>
+		<Property name="rollingFileName">AL</Property>
+	</properties>
+	<Appenders>
+		<Console name="LogToConsole" target="SYSTEM_OUT">
+			<PatternLayout pattern="%msg%n" />
+		</Console>
+
+		<RollingRandomAccessFile
+			name="LogToRollingRandomAccessFile"
+			fileName="${logPath}${rollingFileName}.log"
+			filePattern="${logPath}${rollingFileName}-%d{yyyy-MM-dd}-%i.log">
+			<PatternLayout>
+				<Pattern>%m%n</Pattern>
+			</PatternLayout>
+			<Policies>
+				<TimeBasedTriggeringPolicy />
+			</Policies>
+
+			<DefaultRolloverStrategy>
+				<Delete basePath="${logPath}" maxDepth="1">
+					<IfFileName glob="${rollingFileName}-*.log" />
+					<IfLastModified age="7d" />
+				</Delete>
+			</DefaultRolloverStrategy>
+		</RollingRandomAccessFile>
+
+		<Async name="Async">
+			<AppenderRef ref="LogToRollingRandomAccessFile" />
+		</Async>
+	</Appenders>
+	<Loggers>
+		<Root level="trace">
+			<AppenderRef ref="LogToConsole" />
+			<AppenderRef ref="Async" />
+		</Root>
+	</Loggers>
+</Configuration>

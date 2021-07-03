@@ -13,9 +13,14 @@ import co.com.mercadolibre.dto.DTOSatelitesOut;
 import co.com.mercadolibre.service.IComunicacionService;
 import co.com.mercadolibre.util.Constantes;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 @RestController
 @RequestMapping(Constantes.PATH_COMUNICATION_CONTEXT)
 public class ComunicacionController {
+	
+	private static final Logger LOGGER = LoggerFactory.getLogger(ComunicacionController.class);
 
 	private final IComunicacionService comunicacionesService;
 
@@ -27,6 +32,7 @@ public class ComunicacionController {
 
 	@PostMapping(produces = "application/json", consumes = "application/json")
 	public ResponseEntity<DTOSatelitesOut> sourceContent(@RequestBody DTOSatelitesIn satelite) {	
+		LOGGER.info("Inicio sourceContent en controller Request:"+satelite);
 		return new ResponseEntity<DTOSatelitesOut>(comunicacionesService.retrySourceContentMessage(satelite),HttpStatus.CREATED);
 	}
 

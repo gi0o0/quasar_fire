@@ -4,6 +4,8 @@ import java.util.Arrays;
 import java.util.List;
 
 import org.apache.commons.math3.fitting.leastsquares.LeastSquaresOptimizer.Optimum;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.apache.commons.math3.fitting.leastsquares.LevenbergMarquardtOptimizer;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -21,6 +23,8 @@ import co.com.mercadolibre.util.Constantes;
 public class PosicionService implements IPosicionService {
 
 	private final ISateliteDAO dao;
+	
+	private static final Logger LOGGER = LoggerFactory.getLogger(PosicionService.class);
 
 	@Autowired
 	public PosicionService(ISateliteDAO dao) {
@@ -30,6 +34,9 @@ public class PosicionService implements IPosicionService {
 
 	@Override
 	public double[] getLocation(double[][] coordinatesSatelites, double[] distanceSatelites) {
+		
+		LOGGER.info("Inicio getMessage en service Request:"+distanceSatelites);
+		
 		NonLinearLeastSquaresSolver solver = new NonLinearLeastSquaresSolver(
 				new TrilaterationFunction(coordinatesSatelites, distanceSatelites), new LevenbergMarquardtOptimizer());
 		Optimum optimum = solver.solve();

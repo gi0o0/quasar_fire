@@ -88,6 +88,9 @@ ${URL} = Corresponde a la URL de la Base de datos Ejemplo: jdbc:mysql://servicio
 ${USERNAME} = Corresponde al usuario de la base de datos
 ${PASSWORD} = Corresponde a la contraseña de la base de datos.
 
+Adicional modificar el atributo Property name="logPath" del archivo https://github.com/gi0o0/quasar_fire/tree/master/src/main/resources/log4j2.xml
+ENV:RUTALOGS = Ingresar la ruta donde se deberan crear los logs.
+
 
 Puede ejecutar este proyecto en local usando maven:
 
@@ -101,6 +104,8 @@ o puede comenzar el servicio con ECS.
 ## Ejecuciòn 
 
 Las siguientes son las URLs relacionadas con el servicio publicado:
+
+  Incluir el Header Content-Type : Application/json 
 
 
   Servicio topsecret:  http://3.93.242.192:8080/v01/quasar/topsecret

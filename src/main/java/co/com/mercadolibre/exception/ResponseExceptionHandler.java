@@ -2,6 +2,8 @@ package co.com.mercadolibre.exception;
 
 import java.util.Date;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -16,11 +18,14 @@ import org.springframework.web.servlet.mvc.method.annotation.ResponseEntityExcep
 @ControllerAdvice
 @RestController
 public class ResponseExceptionHandler extends ResponseEntityExceptionHandler {
+	
+	private static final Logger LOGGER = LoggerFactory.getLogger(ResponseExceptionHandler.class);
 
 	@SuppressWarnings({ "rawtypes", "unchecked" })
 	@ExceptionHandler(Exception.class)
 	public final ResponseEntity<Object> manejarTodasExcepciones(Exception ex, WebRequest request){
 		ExceptionResponse exceptionResponse = new ExceptionResponse(new Date(), ex.getMessage(), request.getDescription(true));
+		LOGGER.error("Inicio retrySourceContentMessage en controller Request:"+ex.getMessage());
 		return new ResponseEntity(exceptionResponse, HttpStatus.INTERNAL_SERVER_ERROR);
 	}
 	
@@ -30,7 +35,7 @@ public class ResponseExceptionHandler extends ResponseEntityExceptionHandler {
 		
 		ExceptionResponse exceptionResponse = new ExceptionResponse(new Date(), ex.getMessage(),
 				request.getDescription(false));
-		
+		LOGGER.error("Inicio retrySourceContentMessage en controller Request:"+ex.getMessage());
 		return new ResponseEntity(exceptionResponse, HttpStatus.NOT_FOUND);
 	}
 	
@@ -40,7 +45,7 @@ public class ResponseExceptionHandler extends ResponseEntityExceptionHandler {
 		
 		ExceptionResponse exceptionResponse = new ExceptionResponse(new Date(), ex.getMessage(),
 				request.getDescription(false));
-		
+		LOGGER.error("Inicio retrySourceContentMessage en controller Request:"+ex.getMessage());
 		return new ResponseEntity(exceptionResponse, HttpStatus.NOT_FOUND);
 	}
 	
@@ -52,6 +57,7 @@ public class ResponseExceptionHandler extends ResponseEntityExceptionHandler {
 			errores += e.getObjectName();
 		}
 		ExceptionResponse exceptionResponse = new ExceptionResponse(new Date(), ex.getMessage(), errores);
+		LOGGER.error("Inicio retrySourceContentMessage en controller Request:"+ex.getMessage());
 		
 		return new ResponseEntity(exceptionResponse, HttpStatus.BAD_REQUEST);
 	}

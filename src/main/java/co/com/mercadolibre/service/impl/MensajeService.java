@@ -6,6 +6,8 @@ import java.util.List;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -19,6 +21,8 @@ import co.com.mercadolibre.util.UtilidadesService;
 public class MensajeService implements IMensajeService {
 
 	private final UtilidadesService utilidadesService;
+	
+	private static final Logger LOGGER = LoggerFactory.getLogger(MensajeService.class);
 
 	@Autowired
 	public MensajeService(UtilidadesService utilidadesService) {
@@ -28,6 +32,8 @@ public class MensajeService implements IMensajeService {
 
 	@Override
 	public String getMessage(List<Satelite> satelites) {
+		
+		LOGGER.info("Inicio getMessage en service Request:"+satelites);
 
 		List<String> baseList = new ArrayList<String>();
 		for (Satelite obj : satelites) {
