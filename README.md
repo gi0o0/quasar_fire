@@ -103,11 +103,11 @@ o puede comenzar el servicio con ECS.
 Las siguientes son las URLs relacionadas con el servicio publicado:
 
 
-  Servicio topsecret:  http://3.83.247.249:8080/v01/quasar/topsecret
+  Servicio topsecret:  http://3.93.242.192:8080/v01/quasar/topsecret
   
-  Servicio topsecret_split:  http://3.83.247.249:8080/v01/quasar/topsecret_split
+  Servicio topsecret_split:  http://3.93.242.192:8080/v01/quasar/topsecret_split
 
-  Swagger:  http://3.83.247.249:8080/v01/quasar/swagger-ui.html
+  Swagger:  http://3.93.242.192:8080/v01/quasar/swagger-ui.html
   
-  Health: http://3.83.247.249:8080/v01/quasar/health
+  Health: http://3.93.242.192:8080/v01/quasar/health
  
